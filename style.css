@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+* {
+  font-family: "Open Sans";
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header:before {
+  z-index: 2;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header {
+  position: relative;
+  z-index: 3;
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  height: 448px;
+}
+
+.container {
+  min-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 179px;
+  position: relative;
+  z-index: 3;
+  margin-top: 27px;
+  margin-left: 3px;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 36px;
+  margin-left: 38px;
+}
+
+.nav-item {
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-item:nth-child(n + 2) {
+  margin-left: 35px;
+}
+
+.nav-link {
+  font-size: 13px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  color: #fff;
+}
+
+.h1 {
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding-top: 97px;
+
+  font-size: 45px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans";
+  /*   width: 680px; */
+  width: 713px;
+}
+
+/* header сверстан */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 62px;
+}
+
+.main {
+  width: 778px;
+  margin-left: 237px;
+}
+
+.main-card {
+  display: flex;
+  margin-bottom: 59px;
+}
+
+.card-img {
+  width: 378px;
+}
+
+.card-text {
+  width: 367px;
+}
+
+.card-list-links {
+  display: inline-flex;
+}
+
+.card-list-link {
+  list-style: none;
+}
+
+.card-list-link:nth-child(n + 2) {
+  margin-left: 19px;
+}
+
+.card-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #b59f5b;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans";
+  margin-top: 15px;
+}
+
+.title-link {
+  color: #0f0d0e;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  color: #b59f5b;
+}
+
+.date {
+  margin-top: 37px;
+}
+
+.datetime {
+  font-size: 12px;
+  color: #888888;
+  display: inline-block;
+}
+
+.author {
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+  font-style: normal;
+  margin-left: 13px;
+}
+
+.description {
+  font-size: 15px;
+  color: #0f0d0e;
+  margin-top: 57px;
+  margin-bottom: 25px;
+}
+
+/* main сверстан */
+
+.aside {
+  width: 272px;
+}
+
+.aside-title {
+  position: relative;
+  font-size: 14px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-weight: 700;
+  margin-bottom: 46px;
+}
+
+.aside-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 66px;
+  top: 28px;
+  left: 21px;
+  border-bottom: 2px solid #b59f5b;
+}
+
+.aside-card {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.aside-card:last-child {
+  margin-bottom: 60px;
+}
+
+.aside-img {
+  width: 70px;
+}
+
+.aside-datetime {
+  display: block;
+  margin-left: 19px;
+  opacity: 0.541;
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.aside-card-title {
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+}
+
+.aside-card-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+}
+
+.aside-card-link:hover {
+  color: #b59f5b;
+}
