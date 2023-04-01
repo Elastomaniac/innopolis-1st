@@ -115,6 +115,7 @@
 
 .main-card {
   display: flex;
+  margin-bottom: 59px;
 }
 
 .card-img {
@@ -160,6 +161,9 @@
 .title-link {
   color: #0f0d0e;
   text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .title-link:hover {
@@ -186,7 +190,9 @@
 .description {
   font-size: 15px;
   color: #0f0d0e;
-  margin-top: 47px;
+  margin-top: 45px;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 /* aside */
