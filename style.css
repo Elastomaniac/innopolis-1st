@@ -214,6 +214,8 @@
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
+  margin-top: -10px;
+  margin-left: -6px;
 }
 
 .aside-title::after {
@@ -222,6 +224,8 @@
   display: block;
   width: 66px;
   border-bottom: 2px solid #b59f5b;
+  top: 35px;
+  left: 20px;
 }
 
 .aside-card {
