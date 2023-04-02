@@ -49,22 +49,21 @@
 .header-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
 }
 
 .logo {
   width: 179px;
   position: relative;
   z-index: 3;
-  margin-top: 27px;
-  margin-left: 3px;
 }
 
 .nav-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 36px;
-  margin-left: 38px;
+  margin-left: 40px;
 }
 
 .nav-item {
@@ -95,22 +94,22 @@
   line-height: 1.7;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Open Sans";
   /*   width: 680px; */
   width: 713px;
 }
 
-/* header сверстан */
-
 .main-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 62px;
+  padding-top: 64px;
+  min-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main {
   width: 778px;
-  margin-left: 237px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-card {
@@ -119,11 +118,14 @@
 }
 
 .card-img {
-  width: 378px;
+  width: 381px;
+  padding-left: 93px;
 }
 
 .card-text {
   width: 367px;
+  margin-left: 30px;
+  margin-top: -15px;
 }
 
 .card-list-links {
@@ -152,13 +154,14 @@
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Open Sans";
-  margin-top: 15px;
 }
 
 .title-link {
   color: #0f0d0e;
   text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .title-link:hover {
@@ -166,7 +169,7 @@
 }
 
 .date {
-  margin-top: 37px;
+  margin-top: 23px;
 }
 
 .datetime {
@@ -180,17 +183,25 @@
   font-weight: 700;
   display: inline-block;
   font-style: normal;
-  margin-left: 13px;
+  letter-spacing: 0.5px;
 }
 
 .description {
   font-size: 15px;
   color: #0f0d0e;
-  margin-top: 57px;
-  margin-bottom: 25px;
+  margin-top: 45px;
+  font-size: 15px;
+  line-height: 22px;
 }
 
-/* main сверстан */
+.description-additional {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #0f0d0e;
+}
+
+/* aside */
 
 .aside {
   width: 272px;
@@ -203,7 +214,8 @@
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  margin-bottom: 46px;
+  margin-top: -10px;
+  margin-left: -6px;
 }
 
 .aside-title::after {
@@ -211,18 +223,16 @@
   position: absolute;
   display: block;
   width: 66px;
-  top: 28px;
-  left: 21px;
   border-bottom: 2px solid #b59f5b;
+  top: 35px;
+  left: 20px;
 }
 
 .aside-card {
   display: flex;
-  margin-bottom: 22px;
 }
 
 .aside-card:last-child {
-  margin-bottom: 60px;
 }
 
 .aside-img {
@@ -235,11 +245,9 @@
   opacity: 0.541;
   font-size: 12px;
   color: #000000;
-  margin-bottom: 10px;
 }
 
 .aside-card-title {
-  margin-left: 20px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
