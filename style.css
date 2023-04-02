@@ -207,6 +207,11 @@
   width: 272px;
 }
 
+.aside-section1 {
+  display: flex;
+  flex-direction: column;
+}
+
 .aside-title {
   position: relative;
   font-size: 14px;
@@ -230,9 +235,12 @@
 
 .aside-card {
   display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 22px;
 }
 
 .aside-card:last-child {
+  margin-bottom: 60px;
 }
 
 .aside-img {
