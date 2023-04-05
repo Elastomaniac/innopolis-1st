@@ -50,8 +50,14 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.header {
+.header-container {
   position: relative;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
   z-index: 3;
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
   background-repeat: no-repeat;
@@ -99,6 +105,12 @@ a {
   z-index: 3;
   text-decoration: none;
   color: #fff;
+}
+
+.h1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h1 {
