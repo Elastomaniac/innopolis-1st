@@ -68,7 +68,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 28px;
+  padding-top: 36px;
 }
 
 .logo {
@@ -79,9 +79,6 @@ a {
 
 .nav-list {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-left: 40px;
 }
 
 .nav-item {
@@ -107,13 +104,12 @@ a {
   z-index: 3;
   text-align: center;
   padding-top: 97px;
-
   font-size: 45px;
   line-height: 1.7;
   text-transform: uppercase;
   font-weight: 700;
-  /*   width: 680px; */
-  width: 713px;
+  max-width: 719px;
+  margin: auto;
 }
 
 /* ================ MAIN ================ */
