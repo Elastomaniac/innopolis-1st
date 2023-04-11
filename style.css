@@ -411,30 +411,26 @@ a {
 }
 
 .tags-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tag {
-  box-sizing: border-box;
-  padding: 8px 12px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #0f0d0e;
-  font-weight: 700;
-  height: 30px;
-  background-color: rgba(244, 243, 241, 0);
   border: 3px solid #eeeeee;
-  display: inline-block;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  margin: 4px 4px 0 0;
 }
 
 .tag:hover {
-  border: 3px solid #b59f5b;
+  border-color: #b59f5b;
+}
+
+.tag-link {
+  display: block;
+  padding: 6px 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0f0d0e;
 }
 
 /* ================ THEMES SECTION ================ */
@@ -480,6 +476,7 @@ a {
   color: #b59f5b;
   font-size: 12px;
   font-weight: 700;
+  vertical-align: super;
 }
 
 /* ================ FOOTER ================ */
