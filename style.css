@@ -232,36 +232,26 @@ a {
 } */
 
 .aside-title {
-  /* position: relative; */
   font-size: 14px;
   line-height: 29px;
   color: #0f0d0e;
   font-weight: 700;
-  /* margin-top: -10px; */
-  /* margin-bottom: 46px; */
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 20px;
 }
 
 .aside-title::after {
-  /* content: "";
-  position: absolute;
-  width: 66px;
-  border-bottom: 3px solid #b59f5b;
-  top: 35px;
-  left: 20px; */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 10px auto 0;
+  margin: 14px auto 0;
 }
 
 .aside-card {
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 22px;
 }
 
@@ -350,11 +340,10 @@ a {
 
 /* ================ MAILING LIST FORM ================ */
 .mailing-list {
-  position: relative;
 }
 
 .mailing-list-title {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
@@ -363,18 +352,12 @@ a {
 }
 
 .mailing-list-title::after {
-  /* content: "";
-  position: absolute;
-  width: 66px;
-  border-bottom: 3px solid #b59f5b;
-  top: 35px;
-  left: 103px; */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 10px auto 0;
+  margin: 14px auto 0;
 }
 
 .email {
@@ -406,28 +389,21 @@ a {
 /* ================ TAGS SECTION ================ */
 
 .tags-title {
-  position: relative;
   font-size: 14px;
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 41px;
+  margin-bottom: 24px;
 }
 
 .tags-title::after {
-  /* content: "";
-  position: absolute;
-  width: 66px;
-  border-bottom: 3px solid #b59f5b;
-  top: 35px;
-  left: 103px; */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 10px auto 0;
+  margin: 14px auto 0;
 }
 
 .tags-list {
@@ -456,29 +432,22 @@ a {
 /* ================ THEMES SECTION ================ */
 
 .themes-title {
-  position: relative;
   text-align: center;
   margin-top: 61px;
   font-size: 14px;
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  margin-bottom: 48px;
+  margin-bottom: 31px;
 }
 
 .themes-title::after {
-  /* content: "";
-  position: absolute;
-  width: 66px;
-  border-bottom: 3px solid #b59f5b;
-  top: 35px;
-  left: 103px; */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 10px auto 0;
+  margin: 14px auto 0;
 }
 
 .themes-list {
