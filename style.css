@@ -362,7 +362,6 @@ a {
 
 .email {
   padding-left: 18px;
-  box-sizing: border-box;
   width: 270px;
   height: 48px;
   opacity: 0.541;
@@ -481,9 +480,8 @@ a {
 }
 
 .footer-wrapper {
-  width: 1200px;
+  width: 1170px;
   margin: auto;
-  padding: 31px;
 }
 
 .address {
