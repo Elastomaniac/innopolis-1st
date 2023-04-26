@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ============ COMMON ================ */
 @font-face {
   font-family: "Open Sans";
@@ -92,6 +99,10 @@ a {
   z-index: 3;
 }
 
+.nav {
+  margin-top: -19px;
+}
+
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +110,8 @@ a {
 }
 
 .nav-item {
+  margin-right: -2px;
+  /* ПП */
   color: white;
   text-transform: uppercase;
 }
@@ -238,7 +251,7 @@ a {
 .description-container > p {
   margin-top: 47px;
   letter-spacing: 0.2px;
-  /* Почему-то некоторые блоки хорошо отображаются с разным значением "letter-spacing" */
+  /* Почему-то некоторые блоки хорошо отображаются с РАЗНЫМ значением "letter-spacing" */
   /* ПП */
   font-size: 15px;
   line-height: 22px;
@@ -274,16 +287,17 @@ a {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 20px;
+  margin: -8px 0 17px 8px;
 }
 
 .aside-title::after {
+  margin: 4px auto 27px;
+  /* ПП */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 14px auto 0;
 }
 
 .aside-card {
@@ -299,21 +313,30 @@ a {
 
 .aside-img {
   width: 70px;
+  /* ПП */
 }
 
 .aside-text {
   margin-left: 30px;
 }
 
+.aside-strange-one {
+  height: 70px;
+  /* -костыльный метод в рамках ПП, картинка вслед за текстом была почему-то прямоугольной */
+}
+
 .aside-datetime {
   display: block;
-  margin-left: 19px;
+  margin-left: -9px;
   opacity: 0.541;
   font-size: 12px;
   color: #000000;
 }
 
 .aside-card-title {
+  margin-top: 4px;
+  margin-left: -8px;
+  letter-spacing: -0.3px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -337,18 +360,23 @@ a {
 /* ================ FORM-SEARCH ================ */
 
 .form-search {
+  margin-top: 62px;
+  /* ПП */
   /* width: 300px; */
-  /* вроде надо раскомментировать ширину 300*/
+  /* вроде надо было раскомментировать ширину 300*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .search {
   width: 221px;
   /* ширина-костыль */
-  padding: 6px 12px;
+  padding: 6px 19px;
   height: 48px;
   border: none;
   background-color: #f4f7f6;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
 }
@@ -368,6 +396,7 @@ a {
 }
 
 .search-button {
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 48px;
   height: 48px;
@@ -389,6 +418,8 @@ a {
 }
 
 .mailing-list-title {
+  margin-top: 59px;
+  /* ПП */
   margin-bottom: 22px;
   text-align: center;
   font-size: 14px;
@@ -398,12 +429,13 @@ a {
 }
 
 .mailing-list-title::after {
+  margin: 11px auto 0;
+  /* ПП */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 14px auto 0;
 }
 
 .email {
@@ -435,6 +467,8 @@ a {
 /* ================ TAGS SECTION ================ */
 
 .tags-title {
+  margin-top: -2px;
+  /* ПП */
   font-size: 14px;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -444,12 +478,13 @@ a {
 }
 
 .tags-title::after {
+  margin: 11px auto 0;
+  /* ПП */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 14px auto 0;
 }
 
 .tags-list {
@@ -481,8 +516,9 @@ a {
 /* ================ THEMES SECTION ================ */
 
 .themes-title {
+  margin-top: 52px;
+  /* ПП */
   text-align: center;
-  margin-top: 61px;
   font-size: 14px;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -491,24 +527,27 @@ a {
 }
 
 .themes-title::after {
+  margin: 11px auto 0;
+  /* ПП */
   content: "";
   display: block;
   height: 3px;
   width: 66px;
   background-color: #e1d9bd;
-  margin: 14px auto 0;
 }
 
 .themes-list {
   list-style: none;
+  line-height: 0.2;
 }
 
 .themes-item {
+  margin-top: 21px;
+  padding-bottom: 18px;
+  /* ПП */
   font-size: 14px;
   color: #000000;
   font-weight: 700;
-  padding-bottom: 18px;
-  margin-top: 21px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -526,7 +565,7 @@ a {
 /* ================ FOOTER ================ */
 
 .footer {
-  margin-top: 64px;
+  margin-top: 7px;
 }
 
 .footer-wrapper {
