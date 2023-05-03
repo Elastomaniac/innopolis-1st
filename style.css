@@ -174,6 +174,9 @@ a {
 
 .card-img {
   width: 381px;
+  height: 294px;
+  /* test не уверен, что стоит задавать картинке жесткие размеры(высоту), но без указания высоты при удалении вех блоков, расположенных ниже она тянется вниз, искажая пропорции */
+  /* object-fit: contain; за исключением указания этого св-ва, но тогда картинка смещается вниз, хоть и сохраняет пропорции */
 }
 
 .card-text {
@@ -186,6 +189,9 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+
+  flex-wrap: wrap;
+  /* test не очень красиво выглядит, если тегов много,однако флекс-врап отрабатывает штатно */
 }
 
 .card-list-link {
@@ -246,6 +252,9 @@ a {
   display: inline-block;
   font-style: normal;
   letter-spacing: 0.5px;
+
+  word-break: break-all;
+  /* test добавил на случай длинного имени, оно "спрыгивает" ниже даты, если длинное, аналогично ведет себя при очень длинном тексте даты */
 }
 
 .description-container > p {
@@ -322,7 +331,7 @@ a {
 
 .aside-strange-one {
   height: 70px;
-  /* -костыльный метод в рамках ПП, картинка вслед за текстом была почему-то прямоугольной */
+  /* -костыльный метод в рамках ПиксПерф, картинка вслед за текстом была почему-то прямоугольной */
 }
 
 .aside-datetime {
@@ -361,7 +370,8 @@ a {
 
 .form-search {
   margin-top: 62px;
-  /* ПП */
+  margin-bottom: 59px;
+  /* ПП  test*/
   /* width: 300px; */
   /* вроде надо было раскомментировать ширину 300*/
   display: -webkit-box;
@@ -379,9 +389,6 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
-}
-
-.search:focus {
 }
 
 .visually-hidden {
@@ -415,10 +422,12 @@ a {
 
 /* ================ MAILING LIST FORM ================ */
 .mailing-list {
+  margin-top: 59px;
+  /* test, ПП */
 }
 
 .mailing-list-title {
-  margin-top: 59px;
+  /* margin-top: 59px; */
   /* ПП */
   margin-bottom: 22px;
   text-align: center;
@@ -465,6 +474,10 @@ a {
 }
 
 /* ================ TAGS SECTION ================ */
+
+.tags {
+  /* test при удалении раздела "теги" появляется неприлично большой зазор между кнопкой "подписаться" и разделом "темы" */
+}
 
 .tags-title {
   margin-top: -2px;
