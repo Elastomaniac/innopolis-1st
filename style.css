@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* ============ COMMON ================ */
 @font-face {
   font-family: "Open Sans";
@@ -72,6 +65,7 @@ a {
   background-repeat: no-repeat;
   height: 448px;
   background-size: cover;
+  padding: 0 15px;
 }
 
 .container {
@@ -150,10 +144,13 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 64px;
-  width: 1170px;
   margin-left: auto;
   margin-right: auto;
+
+  width: 1200px;
+  padding: 64px 15px 0;
+  /* margin-top: 64px; */
+  /* 9.05 замечание */
 }
 
 .main {
@@ -169,15 +166,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main-card:not(:last-child) {
   margin-bottom: 60px;
 }
+/* 9.05 замечание */
 
 .card-img {
   width: 381px;
-  height: 294px;
-  /* test не уверен, что стоит задавать картинке жесткие размеры(высоту), но без указания высоты при удалении вех блоков, расположенных ниже она тянется вниз, искажая пропорции */
-  /* object-fit: contain; за исключением указания этого св-ва, но тогда картинка смещается вниз, хоть и сохраняет пропорции */
+  /* object-fit: contain; */
+  /* height: 294px; */
 }
+/* 9.05 замечание */
+
+/* test не уверен, что стоит задавать картинке жесткие размеры(высоту), но без указания высоты при удалении вех блоков, расположенных ниже она тянется вниз, искажая пропорции */
+/* object-fit: contain; за исключением указания этого св-ва, но тогда картинка смещается вниз, хоть и сохраняет пропорции */
 
 .card-text {
   width: 367px;
@@ -578,8 +582,10 @@ a {
 /* ================ FOOTER ================ */
 
 .footer {
-  margin-top: 7px;
+  margin-top: 64px;
+  padding: 0 15px;
 }
+/* 9.05 замечание */
 
 .footer-wrapper {
   width: 1170px;
